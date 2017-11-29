@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <ctime>
-#include "graph.h"
+#include <fstream>
+// #include "graph.h"
 #include "algoheader.h"
 
 #define EDGE_MAX_WT 10000
@@ -101,6 +102,9 @@ graph* generateRandomGraphByDegrePc(int numV, int degPc){
     return G;
 }
 graph* generateRandomGraphByAvgDegree(int numV, int avgD){
+    
+    srand((unsigned)time(0));
+
     graph* G = new graph;
     
     int numE = avgD*numV/2;
@@ -111,9 +115,6 @@ graph* generateRandomGraphByAvgDegree(int numV, int avgD){
     /* map to check if we are not adding multiple edges */
     typedef pair<int,int> edge;
     map<edge,int> emap;
-    
-    /* seed the rand function with the current time, to produce different output in different runs */
-    srand((unsigned)time(0));
     
     int weight;
     /* Add deterministic cycle edges to ensure connectivity in the graph */
@@ -156,18 +157,112 @@ graph* generateRandomGraphByAvgDegree(int numV, int avgD){
     return G;
 }
 
-int main(){
+graph* generateFixedGraph(){
     
-    graph* G1 = generateRandomGraphByAvgDegree(5000,8); // G1 is a graph with 5000 vertices, and average degree 8
-    graph* G2 = generateRandomGraphByDegrePc(5000,20); //G2 is a graph with 5000 vertices, and each vertex is neighbours to about 20pc verices.
+        graph* G = new graph;
+        
+        int n = 9;  /* number of predefined vertices */
+        /* Add 10 vertices */
+        for(int i = 1; i<= n; i++){
+            G->addvertex(i);
+        }
     
-    int source = random (1, 5000);
-    int dest = random (1,5000);
-    
-    cout<<"Source: "<<source<<" Destination: "<<dest<<endl;
-    cout<< dijkstraWithoutHeap(G2, source, dest)<<endl;
+        /* add edges */
+        
+        G->addedge(1,2,4);
+        G->addedge(1,8,8);
+        G->addedge(2,8,11);
+        G->addedge(2,3,8);
+        G->addedge(3,4,7);
+        G->addedge(3,6,4);
+        G->addedge(3,9,2);
+        G->addedge(4,5,9);
+        G->addedge(4,6,14);
+        G->addedge(5,6,10);
+        G->addedge(6,7,2);
+        G->addedge(7,8,1);
+        G->addedge(7,9,6);
+        G->addedge(8,9,7);
+        
+        return G;
+        
+}   
 
-    // cout<< dijkstraWithoutHeap(G1, source, dest)<<endl;
+
+int main(){
+     /* seed the rand function with the current time, to produce different output in different runs */
+    srand((unsigned)time(0));
+    
+    graph* G;
+    int temp = 1;
+    ofstream myfile;
+    myfile.open ("example.txt");
+    
+    for(int i = 1; i<=1; i++){
+        /* generate 5 pairs of random graphs */
+        if(i==6) 
+        {temp =2;}
+        // cout<<"Generatiing graph "<<i<<": "<<endl;
+        // int temp = random(1,2); /* randomly select which type of graph to generate, 1, or 2 */
+        // if (temp == 1){
+        if (temp == 10){
+            cout<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and average degree 8..."<<endl;
+            myfile<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and average degree 8..."<<endl;
+
+            G = generateRandomGraphByAvgDegree(5000,8); // G is a graph with 5000 vertices, and average degree 8
+            // cout<<G->numberOfEdges<<endl;
+        // }else if (temp == 2){
+        }else if (temp == 1){
+            cout<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<endl;
+            myfile<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<endl;
+
+            G = generateRandomGraphByDegrePc(5000,20); //G is a graph with 5000 vertices, and each vertex is neighbours to about 20pc verices.
+            // cout<<G->numberOfEdges<<endl;
+
+        }
+        
+        for(int j =1; j<=1; j++){
+            /* 5 pair of source, destination */
+            int source = random (1, 5000);
+            int dest = random (1,5000);
+            cout<<"Iteration "<<j<<endl;
+            cout<<"Source: "<<source<<" Destination: "<<dest<<endl;
+            myfile<<"Source: "<<source<<" Destination: "<<dest<<endl;
+    
+    // cout<<"Fixed Source: "<<fixedSource<<" Fixed Destination: "<<fixedDest<<endl;
+    // source = fixedSource; 
+    // dest = fixedDest;
+    
+    cout<<"Method 1 Begins: -----> "<<endl;
+    clock_t start = clock();
+    cout<<"::Max Bandwidth::"<<  dijkstraWithoutHeap(G, source, dest)<<endl;
+    clock_t stop = clock();
+    // double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    // cout<<"DijkstraWithoutHeap: Time elapsed in ms: "<< elapsed<<endl;
+    double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+    cout<<"DijkstraWithoutHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"DijkstraWithoutHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    
+    cout<<"Method 2 Begins: -----> "<<endl;
+    start = clock();
+    cout<<"::Max Bandwidth::"<< dijkstraWithHeap(G, source, dest)<<endl;
+    stop = clock();
+    // elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    // cout<<"DijkstraWithHeap: Time elapsed in ms: "<< elapsed<<endl;
+    elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+    cout<<"DijkstraWithHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"DijkstraWithHeap Fiished: Time elapsed in seconds: "<< elapsed<<endl;
+    // cout<<G3->numberOfVertices <<" "<<G3->numberOfEdges;
+    cout<<"Method 3 Begins: -----> "<<endl;
+    start = clock();
+    cout<<"::Max Bandwidth::"<< kruskal(G, source, dest)<<endl;
+    stop = clock();
+    // elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    // cout<<"Kruskal: Time elapsed in ms: "<< elapsed<<endl;
+        elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+    cout<<"Kruskal Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"Kruskal Finished: Time elapsed in seconds: "<< elapsed<<endl;
+     // cout<< dijkstraWithoutHeap(G1, source, dest)<<endl;
     // cout<<G2->findVertex[1]->degree<<endl;
     // cout << G1->numberOfVertices <<endl;
     // cout << G1->numberOfEdges <<endl;
@@ -180,7 +275,7 @@ int main(){
     /* Print adjacency list for first 10 vertices */
     // vertex* v;
      
-    // for(int i = 1; i <= 10; i++){
+    // for(int i = 1; i <= 9; i++){
     //     cout<<i<<": ";
     //     v = G1->findVertex[i];
     //     int n = (v->adj).size();
@@ -189,5 +284,9 @@ int main(){
     //     }
     //     cout<<endl;
     // }
+            
+        }
+        cout<<"---------------------------"<<endl;
+    }
     return 0;
 }

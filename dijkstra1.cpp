@@ -1,25 +1,14 @@
 #include "algoheader.h"
 
-void printPath(const vector<int>& DAD, int d){
-    int v = d;
-    
-    while(v != 0){
-        cout<<v;
-        v = DAD[v];
-        if (v != 0)
-            cout<<"-->";
-        else
-            cout<<endl;
-            
-    }
-}
+
 /* Function takes in a graph, and two vertices: source, and destination. It calculates the maximum bandwidth path, and returns the value of the maximum bandwidth path */
 double dijkstraWithoutHeap(graph* G, int source, int dest){
     vector<int> STATUS(G->numberOfVertices + 1, 0); //Initialized to UNSEEN
     vector<int> DAD(G->numberOfVertices + 1, 0); 
     vector<double> BANDWIDTH(G->numberOfVertices + 1); 
     STATUS[source] = 1; //IN-TREE
-
+    BANDWIDTH[source] = DBL_MAX; //bandwidth infinite
+    
     vertex* s = G->findVertex[source]; //source vertex
     
     int n = s->adj.size();
