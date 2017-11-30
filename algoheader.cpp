@@ -77,6 +77,7 @@ double BFS (graph* G, int s, int d){
         }
     }
     
+    G->~graph();
     printPath(DAD, d);
     return BANDWIDTH[d];
 }

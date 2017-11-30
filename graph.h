@@ -22,7 +22,7 @@ struct edge{
   int edgeNumber;
   double cost;
   
-  edge(vertex* a, vertex* b, int e, double c) : v1(a), v2(b), edgeNumber(c), cost(c) {};
+  edge(vertex* a, vertex* b, int e, double c) : v1(a), v2(b), edgeNumber(e), cost(c) {};
 
   
 };
