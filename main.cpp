@@ -1,8 +1,8 @@
 #include <cstdlib>
 #include <ctime>
-#include <fstream>
 // #include "graph.h"
 #include "algoheader.h"
+#include <fstream>
 
 #define EDGE_MAX_WT 10000
 /* returns a random number between, and including lowest, and highest. */
@@ -46,12 +46,15 @@ graph* generateRandomGraphByDegrePc(int numV, int degPc){
     //add between the first and the last vertex as well.
     weight = random (0, EDGE_MAX_WT); //considering integer weights for now
     G->addedge(1,numV,weight);
-            
+    
+    int addedEdges = G->numberOfEdges; 
+
     emap[make_pair(1,numV)] = 1;
     emap[make_pair(numV,1)] = 1;
     
-    int loopCount = (numV-1)*numV/2;
-    // cout<<loopCount<<endl;
+    int loopCount = (numV-1)*numV/2 - addedEdges;
+    // cout<<"loopCount: "<<loopCount<<endl;
+    
     while(loopCount>=0){
         
         /* Generate two random vertices */
@@ -193,75 +196,102 @@ int main(){
      /* seed the rand function with the current time, to produce different output in different runs */
     srand((unsigned)time(0));
     
+    clock_t overall_start = clock();
     graph* G;
     int temp = 1;
     ofstream myfile;
-    myfile.open ("example.txt");
+    myfile.open ("output.txt");
     
-    for(int i = 1; i<=1; i++){
+    
+    
+    for(int i = 1; i<=10; i++){
         /* generate 5 pairs of random graphs */
         if(i==6) 
         {temp =2;}
         // cout<<"Generatiing graph "<<i<<": "<<endl;
         // int temp = random(1,2); /* randomly select which type of graph to generate, 1, or 2 */
-        // if (temp == 1){
-        if (temp == 10){
-            cout<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and average degree 8..."<<endl;
-            myfile<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and average degree 8..."<<endl;
+        if (temp == 1){ //uncomment
+        // if (temp == 10){ //comment
+            cout<<"Graph "<<i<<"::5000 vertices, and average degree 8."<<endl;
+            myfile<<"Graph "<<i<<"::5000 vertices, and average degree 8."<<"\n";
 
             G = generateRandomGraphByAvgDegree(5000,8); // G is a graph with 5000 vertices, and average degree 8
             // cout<<G->numberOfEdges<<endl;
-        // }else if (temp == 2){
-        }else if (temp == 1){
-            cout<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<endl;
-            myfile<<"Iteration "<<i<<":: Generating graph with 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<endl;
+        }else if (temp == 2){ //uncomment
+        // }else if (temp == 1){ //comment
+            cout<<"Graph "<<i<<":: 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<endl;
+            myfile<<"Graph "<<i<<":: 5000 vertices, and each vertex is adjacent to about 20pc vertices..."<<"\n";
 
             G = generateRandomGraphByDegrePc(5000,20); //G is a graph with 5000 vertices, and each vertex is neighbours to about 20pc verices.
             // cout<<G->numberOfEdges<<endl;
 
         }
         
-        for(int j =1; j<=1; j++){
+        for(int j =1; j<=5; j++){
             /* 5 pair of source, destination */
             int source = random (1, 5000);
             int dest = random (1,5000);
-            cout<<"Iteration "<<j<<endl;
+            cout<<"Iteration "<<j<<" of 5:"<<endl;
+            myfile<<"Iteration "<<j<<" of 5:"<<"\n";
+
             cout<<"Source: "<<source<<" Destination: "<<dest<<endl;
-            myfile<<"Source: "<<source<<" Destination: "<<dest<<endl;
+            myfile<<"Source: "<<source<<" Destination: "<<dest<<"\n";
     
     // cout<<"Fixed Source: "<<fixedSource<<" Fixed Destination: "<<fixedDest<<endl;
     // source = fixedSource; 
     // dest = fixedDest;
     
-    cout<<"Method 1 Begins: -----> "<<endl;
+    cout<<"DijkstraWithoutHeap::Begins::"<<endl;
+    myfile<<"DijkstraWithoutHeap::Begins::"<<"\n";
+
     clock_t start = clock();
-    cout<<"::Max Bandwidth::"<<  dijkstraWithoutHeap(G, source, dest)<<endl;
+    double b = dijkstraWithoutHeap(G, source, dest);
     clock_t stop = clock();
+
+    cout<<"DijkstraWithoutHeap::Max Bandwidth::"<<  b<<endl;
+    myfile<<"DijkstraWithoutHeap::Max Bandwidth::"<<  b<<"\n";
     // double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
     // cout<<"DijkstraWithoutHeap: Time elapsed in ms: "<< elapsed<<endl;
     double elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
-    cout<<"DijkstraWithoutHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
-    myfile<<"DijkstraWithoutHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    cout<<"DijkstraWithoutHeap::Finished::Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"DijkstraWithoutHeap::Finished::Time elapsed in seconds: "<< elapsed<<"\n";
     
-    cout<<"Method 2 Begins: -----> "<<endl;
+    cout<<"*-----------------------------------------------*"<<endl;
+    myfile<<"*-----------------------------------------------*"<<"\n";
+
+    cout<<"DijkstraWithHeap::Begins::"<<endl;
+    myfile<<"DijkstraWithHeap::Begins::"<<"\n";
+
     start = clock();
-    cout<<"::Max Bandwidth::"<< dijkstraWithHeap(G, source, dest)<<endl;
+    b = dijkstraWithHeap(G, source, dest);
     stop = clock();
-    // elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
-    // cout<<"DijkstraWithHeap: Time elapsed in ms: "<< elapsed<<endl;
+    cout<<"DijkstraWithHeap::Max Bandwidth::"<<  b<<endl;
+    myfile<<"DijkstraWithHeap::Max Bandwidth::"<<  b<<endl;
+
     elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
-    cout<<"DijkstraWithHeap Finished: Time elapsed in seconds: "<< elapsed<<endl;
-    myfile<<"DijkstraWithHeap Fiished: Time elapsed in seconds: "<< elapsed<<endl;
-    // cout<<G3->numberOfVertices <<" "<<G3->numberOfEdges;
-    cout<<"Method 3 Begins: -----> "<<endl;
+    cout<<"DijkstraWithHeap::Finished::Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"DijkstraWithHeap Finished::Time elapsed in seconds: "<< elapsed<<"\n";
+    
+    cout<<"*-----------------------------------------------*"<<endl;
+    myfile<<"*-----------------------------------------------*"<<"\n";
+
+    
+    cout<<"Kruskal::Begins::"<<endl;
+    myfile<<"Kruskal::Begins::"<<"\n";
     start = clock();
-    cout<<"::Max Bandwidth::"<< kruskal(G, source, dest)<<endl;
+    b=  kruskal(G, source, dest);
     stop = clock();
-    // elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
-    // cout<<"Kruskal: Time elapsed in ms: "<< elapsed<<endl;
-        elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
-    cout<<"Kruskal Finished: Time elapsed in seconds: "<< elapsed<<endl;
-    myfile<<"Kruskal Finished: Time elapsed in seconds: "<< elapsed<<endl;
+    cout<<"Kruskal::Max Bandwidth::"<<  b<<endl;
+    myfile<<"Kruskal::Max Bandwidth::"<<  b<<"\n";
+
+    elapsed = (double)(stop - start) / CLOCKS_PER_SEC;
+    cout<<"Kruskal::Finished::Time elapsed in seconds: "<< elapsed<<endl;
+    myfile<<"Kruskal Finished::Time elapsed in seconds: "<< elapsed<<"\n";
+    
+    cout<<"*-----------------------------------------------*"<<endl;
+    myfile<<"*-----------------------------------------------*"<<"\n";
+    
+    
      // cout<< dijkstraWithoutHeap(G1, source, dest)<<endl;
     // cout<<G2->findVertex[1]->degree<<endl;
     // cout << G1->numberOfVertices <<endl;
@@ -286,7 +316,16 @@ int main(){
     // }
             
         }
-        cout<<"---------------------------"<<endl;
+    cout<<"*==================================================*"<<endl;
+    myfile<<"*==================================================*"<<"\n";
+    G->~graph();
     }
+    
+    clock_t overall_stop = clock();
+    double overall_elapsed = (double)((overall_stop - overall_start) / CLOCKS_PER_SEC)/60.0;
+    cout<<"Total time taken by program: (in minutes)"<< overall_elapsed<<endl;
+    myfile<<"Total time taken by program: (in minutes)"<< overall_elapsed<<"\n";
+    myfile.close();
+    
     return 0;
 }

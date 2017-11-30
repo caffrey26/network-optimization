@@ -1,0 +1,721 @@
+Graph 1::5000 vertices, and average degree 8.
+Iteration 1 of 5:
+Source: 2902 Destination: 996
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7915
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.064914
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7915
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.033175
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7915
+Kruskal Finished::Time elapsed in seconds: 0.243082
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 4737 Destination: 3707
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8267
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.030968
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8267
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.006799
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8267
+Kruskal Finished::Time elapsed in seconds: 0.241525
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4159 Destination: 4073
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7712
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.192935
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7712
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.060823
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7712
+Kruskal Finished::Time elapsed in seconds: 0.244769
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 3398 Destination: 4232
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8181
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.140582
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8181
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.047659
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8181
+Kruskal Finished::Time elapsed in seconds: 0.241795
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 2218 Destination: 1084
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8056
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.059921
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8056
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.014326
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8056
+Kruskal Finished::Time elapsed in seconds: 0.242212
+*-----------------------------------------------*
+*==================================================*
+Graph 2::5000 vertices, and average degree 8.
+Iteration 1 of 5:
+Source: 615 Destination: 2351
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8135
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.035726
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8135
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.011129
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8135
+Kruskal Finished::Time elapsed in seconds: 0.250204
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 1996 Destination: 4212
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::6917
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.222645
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::6917
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.068025
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::6917
+Kruskal Finished::Time elapsed in seconds: 0.250962
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 3354 Destination: 4433
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7690
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.151609
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7690
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.0372
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7690
+Kruskal Finished::Time elapsed in seconds: 0.249583
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 890 Destination: 3426
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8032
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.162791
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8032
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.054533
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8032
+Kruskal Finished::Time elapsed in seconds: 0.240784
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 1773 Destination: 2632
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8419
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.093488
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8419
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.033428
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8419
+Kruskal Finished::Time elapsed in seconds: 0.24499
+*-----------------------------------------------*
+*==================================================*
+Graph 3::5000 vertices, and average degree 8.
+Iteration 1 of 5:
+Source: 1128 Destination: 271
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7957
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.039928
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7957
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.008768
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7957
+Kruskal Finished::Time elapsed in seconds: 0.246352
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 3595 Destination: 802
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7018
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.218221
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7018
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.069485
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7018
+Kruskal Finished::Time elapsed in seconds: 0.23728
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4358 Destination: 604
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8279
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.095369
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8279
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.028334
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8279
+Kruskal Finished::Time elapsed in seconds: 0.24524
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 2692 Destination: 4203
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7218
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.214781
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7218
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.065964
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7218
+Kruskal Finished::Time elapsed in seconds: 0.242526
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 3749 Destination: 2385
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8498
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.060209
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8498
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.029616
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8498
+Kruskal Finished::Time elapsed in seconds: 0.24867
+*-----------------------------------------------*
+*==================================================*
+Graph 4::5000 vertices, and average degree 8.
+Iteration 1 of 5:
+Source: 4904 Destination: 1397
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8126
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.159161
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8126
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.049502
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8126
+Kruskal Finished::Time elapsed in seconds: 0.242656
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 3171 Destination: 374
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8251
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.133491
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8251
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.034247
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8251
+Kruskal Finished::Time elapsed in seconds: 0.24099
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 2267 Destination: 1395
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::6579
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.035119
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::6579
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.015665
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::6579
+Kruskal Finished::Time elapsed in seconds: 0.238272
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 1620 Destination: 2774
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7680
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.044328
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7680
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.003773
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7680
+Kruskal Finished::Time elapsed in seconds: 0.238642
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 35 Destination: 2441
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::8040
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.170079
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::8040
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.056864
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::8040
+Kruskal Finished::Time elapsed in seconds: 0.247554
+*-----------------------------------------------*
+*==================================================*
+Graph 5::5000 vertices, and average degree 8.
+Iteration 1 of 5:
+Source: 1676 Destination: 390
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7659
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.200163
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7659
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.065811
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7659
+Kruskal Finished::Time elapsed in seconds: 0.243603
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 709 Destination: 2395
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::6107
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.215637
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::6107
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.063809
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::6107
+Kruskal Finished::Time elapsed in seconds: 0.239435
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4967 Destination: 2978
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::5324
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.23341
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::5324
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.072701
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::5324
+Kruskal Finished::Time elapsed in seconds: 0.240181
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 1349 Destination: 929
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::6883
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.222238
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::6883
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.073225
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::6883
+Kruskal Finished::Time elapsed in seconds: 0.239942
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 2694 Destination: 4609
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::7851
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.148727
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::7851
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.042266
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::7851
+Kruskal Finished::Time elapsed in seconds: 0.2394
+*-----------------------------------------------*
+*==================================================*
+Graph 6:: 5000 vertices, and each vertex is adjacent to about 20pc vertices...
+Iteration 1 of 5:
+Source: 4067 Destination: 1017
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9976
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 1.79689
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9976
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.809099
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9976
+Kruskal Finished::Time elapsed in seconds: 12.9849
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 174 Destination: 77
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9979
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.461318
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9979
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.606503
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9979
+Kruskal Finished::Time elapsed in seconds: 22.8372
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 3399 Destination: 4062
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9984
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 1.4425
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9984
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.804757
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9984
+Kruskal Finished::Time elapsed in seconds: 7.40579
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 26 Destination: 1628
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9962
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 10.4345
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9962
+DijkstraWithHeap Finished::Time elapsed in seconds: 10.9217
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9962
+Kruskal Finished::Time elapsed in seconds: 12.1512
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 4849 Destination: 3463
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9961
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 13.2049
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9961
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.38269
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9961
+Kruskal Finished::Time elapsed in seconds: 10.7867
+*-----------------------------------------------*
+*==================================================*
+Graph 7:: 5000 vertices, and each vertex is adjacent to about 20pc vertices...
+Iteration 1 of 5:
+Source: 582 Destination: 4982
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9987
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 1.79786
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9987
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.613295
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9987
+Kruskal Finished::Time elapsed in seconds: 15.8019
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 4968 Destination: 4335
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9981
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 8.89485
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9981
+DijkstraWithHeap Finished::Time elapsed in seconds: 3.0077
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9981
+Kruskal Finished::Time elapsed in seconds: 17.1905
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 2129 Destination: 2713
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9987
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.415872
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9987
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.82462
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9987
+Kruskal Finished::Time elapsed in seconds: 7.68595
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 944 Destination: 3696
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9984
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.204932
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9984
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.42943
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9984
+Kruskal Finished::Time elapsed in seconds: 7.86245
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 3528 Destination: 3136
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9984
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.097431
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9984
+DijkstraWithHeap Finished::Time elapsed in seconds: 2.76454
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9984
+Kruskal Finished::Time elapsed in seconds: 7.90613
+*-----------------------------------------------*
+*==================================================*
+Graph 8:: 5000 vertices, and each vertex is adjacent to about 20pc vertices...
+Iteration 1 of 5:
+Source: 2700 Destination: 1181
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9952
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 3.46694
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9952
+DijkstraWithHeap Finished::Time elapsed in seconds: 9.88612
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9952
+Kruskal Finished::Time elapsed in seconds: 35.2005
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 3897 Destination: 810
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9982
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 13.3364
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9982
+DijkstraWithHeap Finished::Time elapsed in seconds: 2.57388
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9982
+Kruskal Finished::Time elapsed in seconds: 10.0428
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4607 Destination: 2251
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9985
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.913489
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9985
+DijkstraWithHeap Finished::Time elapsed in seconds: 7.61324
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9985
+Kruskal Finished::Time elapsed in seconds: 9.46353
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 1082 Destination: 3406
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9978
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 5.09033
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9978
+DijkstraWithHeap Finished::Time elapsed in seconds: 2.34089
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9978
+Kruskal Finished::Time elapsed in seconds: 8.46431
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 666 Destination: 542
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9986
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 4.3597
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9986
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.63119
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9986
+Kruskal Finished::Time elapsed in seconds: 10.9806
+*-----------------------------------------------*
+*==================================================*
+Graph 9:: 5000 vertices, and each vertex is adjacent to about 20pc vertices...
+Iteration 1 of 5:
+Source: 1075 Destination: 2486
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9984
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 10.0699
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9984
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.22534
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9984
+Kruskal Finished::Time elapsed in seconds: 21.462
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 1589 Destination: 230
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9975
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 19.2185
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9975
+DijkstraWithHeap Finished::Time elapsed in seconds: 6.68408
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9975
+Kruskal Finished::Time elapsed in seconds: 27.5014
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4684 Destination: 2571
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9983
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 5.23445
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9983
+DijkstraWithHeap Finished::Time elapsed in seconds: 3.98929
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9983
+Kruskal Finished::Time elapsed in seconds: 7.99308
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 3098 Destination: 3767
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9984
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 2.71507
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9984
+DijkstraWithHeap Finished::Time elapsed in seconds: 2.01803
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9984
+Kruskal Finished::Time elapsed in seconds: 10.2503
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 403 Destination: 1645
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9987
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 4.22629
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9987
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.2029
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9987
+Kruskal Finished::Time elapsed in seconds: 10.375
+*-----------------------------------------------*
+*==================================================*
+Graph 10:: 5000 vertices, and each vertex is adjacent to about 20pc vertices...
+Iteration 1 of 5:
+Source: 2877 Destination: 967
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9986
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 7.49119
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9986
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.841177
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9986
+Kruskal Finished::Time elapsed in seconds: 19.3037
+*-----------------------------------------------*
+Iteration 2 of 5:
+Source: 3942 Destination: 2257
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9987
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 3.01251
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9987
+DijkstraWithHeap Finished::Time elapsed in seconds: 0.449645
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9987
+Kruskal Finished::Time elapsed in seconds: 7.75248
+*-----------------------------------------------*
+Iteration 3 of 5:
+Source: 4119 Destination: 1383
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9980
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 0.646392
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9980
+DijkstraWithHeap Finished::Time elapsed in seconds: 1.12519
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9980
+Kruskal Finished::Time elapsed in seconds: 10.0854
+*-----------------------------------------------*
+Iteration 4 of 5:
+Source: 4510 Destination: 4756
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9981
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 16.4216
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9981
+DijkstraWithHeap Finished::Time elapsed in seconds: 7.17705
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9981
+Kruskal Finished::Time elapsed in seconds: 35.6178
+*-----------------------------------------------*
+Iteration 5 of 5:
+Source: 2960 Destination: 4735
+DijkstraWithoutHeap::Begins::
+DijkstraWithoutHeap::Max Bandwidth::9985
+DijkstraWithoutHeap::Finished::Time elapsed in seconds: 10.6967
+*-----------------------------------------------*
+DijkstraWithHeap::Begins::
+DijkstraWithHeap::Max Bandwidth::9985
+DijkstraWithHeap Finished::Time elapsed in seconds: 2.88618
+*-----------------------------------------------*
+Kruskal::Begins::
+Kruskal::Max Bandwidth::9985
+Kruskal Finished::Time elapsed in seconds: 22.6311
+*-----------------------------------------------*
+*==================================================*
+Total time taken by program: (in minutes)15.8833

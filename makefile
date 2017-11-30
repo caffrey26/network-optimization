@@ -29,4 +29,4 @@ dijkstra1_debug.o: dijkstra1.cpp algoheader.h
 	g++ -std=c++11 -g -c dijkstra1.cpp
 
 clean:
-	\rm *.o *~ a.out
+	\rm *.o *~ p1

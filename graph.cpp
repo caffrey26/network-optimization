@@ -1,6 +1,16 @@
 #include "graph.h"
 
-
+graph::~graph(){
+    //destroy space taken by vmap
+    for( map<int, vertex*>::iterator it = findVertex.begin() ; it != findVertex.end() ; ++it ){
+        //it->second has allocated space for vertex*
+        delete it->second;
+    }
+    for (int i = 0; i<edges.size(); i++){
+        delete edges[i];
+    }
+    
+}
 bool graph::vertexExists(int v){
     vmap::iterator itr = findVertex.find(v);
     if (itr == findVertex.end()){
@@ -43,6 +53,9 @@ bool graph::addedge(int v1, int  v2, double cost)
         
         /* increase the number of edges in the graph by 1 */
         numberOfEdges++;
+        
+        edge* e = new edge(f,t,numberOfEdges, cost);
+        edges.push_back(e);
         
         return 1;
     } 
