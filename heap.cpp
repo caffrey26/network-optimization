@@ -68,6 +68,7 @@ int maxHeap::rightChild(int i){
     return 2*i+1;
 }
 
+
 double maxHeap::maxVal(){
     int ret;
     if (lastPos > 0)

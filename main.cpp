@@ -237,9 +237,7 @@ int main(){
             cout<<"Source: "<<source<<" Destination: "<<dest<<endl;
             myfile<<"Source: "<<source<<" Destination: "<<dest<<"\n";
     
-    // cout<<"Fixed Source: "<<fixedSource<<" Fixed Destination: "<<fixedDest<<endl;
-    // source = fixedSource; 
-    // dest = fixedDest;
+   
     
     cout<<"DijkstraWithoutHeap::Begins::"<<endl;
     myfile<<"DijkstraWithoutHeap::Begins::"<<"\n";

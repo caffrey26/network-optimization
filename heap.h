@@ -5,6 +5,7 @@
 class maxHeap{
     public:
     vector<int> heapPos;
+    
     vector<double> heapData;
     int lastPos;
     map<int,int> mapHeap;

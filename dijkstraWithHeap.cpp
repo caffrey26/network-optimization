@@ -3,6 +3,7 @@
 
 
 double dijkstraWithHeap(graph* G, int source, int dest){
+    
     vector<int> STATUS(G->numberOfVertices + 1, 0); //Initialized to UNSEEN
     vector<int> DAD(G->numberOfVertices + 1, 0); 
     vector<double> BANDWIDTH(G->numberOfVertices + 1); 

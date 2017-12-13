@@ -2,6 +2,7 @@
 
 
 /* Function takes in a graph, and two vertices: source, and destination. It calculates the maximum bandwidth path, and returns the value of the maximum bandwidth path */
+
 double dijkstraWithoutHeap(graph* G, int source, int dest){
     vector<int> STATUS(G->numberOfVertices + 1, 0); //Initialized to UNSEEN
     vector<int> DAD(G->numberOfVertices + 1, 0); 

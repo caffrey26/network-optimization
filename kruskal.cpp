@@ -8,33 +8,7 @@ double kruskal(graph* G, int source, int dest){
      int n = G->numberOfVertices; 
      maxHeap H(G->numberOfEdges); //the heap is based on number of edges
      
-     /* insert each edge along with its weight into heap. Keep a note that you don't add the same edge twice */
-    //  int edgeCount = 0;
      
-     /* insert all edges in heap */
-    //  for (int i = 1; i <= n; i++){ //vertice number start from 1 to n
-    //     vertex* s = G->findVertex[i];
-    //     int n1 = s->adj.size(); //size of adjacency list for this vertex
-    //     for(int j = 0; j<n1; j++){
-    //         vertex* neighbour = s->adj[j].second;
-            
-    //         /* the edge identified is [i,neighbour->vNum] with weight s->adj[j].first */
-            
-    //         /* add this edge to heap if it is not already accounted for */
-    //         if ( emapExist.find(make_pair(i,neighbour->vNum)) == emapExist.end() ) { 
-    //             /* add to heap */
-    //             edgeCount++;
-    //             /* we need to somehow number the edges so that we can effectively insert them in the heap */
-    //             emapExist[make_pair(i,neighbour->vNum)] = edgeCount;
-    //             emapExist[make_pair(neighbour->vNum,i)] = edgeCount;
-    //             emap[edgeCount] = make_pair(i,neighbour->vNum);
-                
-    //             // cout<<"edgeCount "<<edgeCount<<": "<<i<<", "<<neighbour->vNum<<"  "<<s->adj[j].first<<endl; // comment
-                
-    //             H.insertHeap(edgeCount, s->adj[j].first);
-    //         }
-    //     }
-    // }
     
     for(int i = 0; i < G->edges.size(); i++){
         // G->edge[i] //edge in G with respective cost, and edgeNumber
